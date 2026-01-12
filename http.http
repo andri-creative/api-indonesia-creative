@@ -7,9 +7,9 @@ Content-Type: application/json
 
 
 ### GET Provinsi
-GET http://localhost:8090/api/v1/provinces
+GET https://api-indonesia-creative.vercel.app/api/v1/provinces
 Content-Type: application/json
-Authorization: Bearer Y2U2MjU2NDBjNWY1ZmJiOTc5MTBhOTdjNjA3MDlmMzgyZWNkMjM1NzQ0NzZhNmRkOTYzYTE3MWExN2I2NDJjYw==
+Authorization: Bearer NmMxZmEzYTJlYjlhNGZmYTNmMmU2YmMzOWI4YjAxMWVhMWE5NDMzNWZmNjNkYjVkNWU4YTVjOTUyZDNjYjlhZA==
 
 ### GET Kabupaten
 GET http://localhost:8090/api/v1/regencies?province_code=11

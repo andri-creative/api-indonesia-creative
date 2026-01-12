@@ -24,8 +24,8 @@ export const useAuth = () => {
   const API_BASE_URL = config.public.apiBaseUrl;
 
   const loginWithGoogle = () => {
-    const callbackUrl = `${window.location.origin}/auth/callback`;
-    window.location.href = `${API_BASE_URL}/auth/google?callbackUrl=${encodeURIComponent(
+    const callbackUrl = `${window.location.origin}/api/v1/auth/callback`;
+    window.location.href = `${API_BASE_URL}/api/v1/auth/google?callbackUrl=${encodeURIComponent(
       callbackUrl
     )}`;
   };
@@ -51,7 +51,7 @@ export const useAuth = () => {
         headers.Authorization = `Bearer ${token}`;
       }
 
-      await $fetch(`${API_BASE_URL}/auth/logout`, {
+      await $fetch(`${API_BASE_URL}/api/v1/auth/logout`, {
         method: "POST",
         credentials: "include",
         headers,
