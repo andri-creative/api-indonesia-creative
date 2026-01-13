@@ -606,7 +606,7 @@ const handleProvinceChange = async () => {
   if (selectedProvince.value) {
     isLoadingRegencies.value = true;
     regencies.value = await fetchData(
-      `/regencies?province_code=${selectedProvince.value}`
+      `/api/v1/regencies?province_code=${selectedProvince.value}`
     );
     isLoadingRegencies.value = false;
   }
@@ -627,7 +627,7 @@ const handleRegencyChange = async () => {
   if (selectedRegency.value) {
     isLoadingDistricts.value = true;
     districts.value = await fetchData(
-      `/districts?regency_code=${selectedRegency.value}`
+      `/api/v1/districts?regency_code=${selectedRegency.value}`
     );
     isLoadingDistricts.value = false;
   }
@@ -645,7 +645,7 @@ const handleDistrictChange = async () => {
   if (selectedDistrict.value) {
     isLoadingVillages.value = true;
     villages.value = await fetchData(
-      `/villages?district_code=${selectedDistrict.value}`
+      `/api/v1/villages?district_code=${selectedDistrict.value}`
     );
     isLoadingVillages.value = false;
   }

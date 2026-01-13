@@ -79,7 +79,6 @@ export const useAuth = () => {
 
     isLoading.value = true;
     try {
-      // Check localStorage first (for offline/quick load)
       if (import.meta.client) {
         const storedUser = localStorage.getItem("auth:user");
         if (storedUser) {
