@@ -81,7 +81,7 @@ onMounted(async () => {
         success: boolean;
         user: any;
         apiKeys?: any[];
-      }>(`${API_BASE_URL}/auth/me`, {
+      }>(`${API_BASE_URL}/api/v1/auth/me`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

@@ -107,7 +107,7 @@ export const useAuth = () => {
           success?: boolean;
           user: User | null;
           apiKeys?: any[];
-        }>(`${API_BASE_URL}/auth/me`, {
+        }>(`${API_BASE_URL}/api/v1/auth/me`, {
           credentials: "include",
           headers,
           // Suppress errors completely for 401
